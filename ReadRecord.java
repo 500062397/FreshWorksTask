@@ -31,13 +31,13 @@ public class ReadRecord {
 				if(requestBody.has(key))
 				{
 					ttl=requestBody.getJSONObject(key).getString("Time to live");
-					System.out.println("ttl::"+ttl);
+					//System.out.println("ttl::"+ttl);
 					cdt=requestBody.getJSONObject(key).getString("createdDateTime");
-					System.out.println("cdt::"+cdt);
+					//System.out.println("cdt::"+cdt);
 				}
 				if(!ttl.equalsIgnoreCase("0"))
 				{
-					System.out.println("ttl!=0");
+					//System.out.println("ttl!=0");
 					Date date=new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse(cdt);
 					Calendar c = Calendar.getInstance();
 			        c.setTime(date);
