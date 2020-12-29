@@ -27,7 +27,7 @@ public class ReadRecord {
 				String ttl="0";
 				String cdt="";
 				//System.out.println(requestBody.toString());
-				//String resp = requestBody.getString("akhil");
+				
 				if(requestBody.has(key))
 				{
 					ttl=requestBody.getJSONObject(key).getString("Time to live");
