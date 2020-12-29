@@ -32,7 +32,7 @@ public class createRecord {
 				String content = new String ( Files.readAllBytes(Paths.get("C:/Users/User/Desktop/dataStore.json")));
 				JSONObject requestBody = new JSONObject(content); 
 				//System.out.println(requestBody.toString());
-				//String resp = requestBody.getString("akhil");
+				
 				if(requestBody.has(key))
 				{
 					//System.out.println("The data store already has data associated with this key, please enter a unique key.");
